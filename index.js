@@ -8,20 +8,23 @@ function newImage(name, left, bottom) {
     document.body.append(img)
     return img
 }
+function newItem(name, left, bottom) {
+    let tool = newImage(name, left, bottom)
 
-// const pic = ['assets/green-character.gif', 100, 100]
+    tool.addEventListener('click', function() {
+        tool.remove();
+    })
+}
 
 newImage('assets/green-character.gif', 100, 100)
-newImage('assets/pine-tree.png', 575, 275)
+newImage('assets/pine-tree.png', 450, 200)
 newImage('assets/tree.png', 200, 300)
 newImage('assets/pillar.png', 350, 100)
 newImage('assets/crate.png', 150, 200)
 newImage('assets/well.png', 500, 425)
-newImage('assets/sword.png', 500, 405)
-newImage('assets/shield.png', 165, 185)
-newImage('assets/staff.png', 600, 100)
 
-document.addEventListener('click', function() {
-    document.remove();
-})
+newItem('assets/sword.png', 500, 405)
+newItem('assets/shield.png', 165, 185)
+newItem('assets/staff.png', 600, 100)
+
 
