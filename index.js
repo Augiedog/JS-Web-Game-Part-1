@@ -1,17 +1,19 @@
 
-function newImage() {
+function newImage(name, left, bottom) {
     let img = document.createElement('img')
-    img.src = 'assets/green-character.gif'
+    img.src = name
     img.style.position = 'fixed'
-    img.style.left = '100px'
-    img.style.bottom = '100px'
+    img.style.left = left + 'px'
+    img.style.bottom = bottom + 'px'
     document.body.append(img)
-
-    let img1 = document.createElement('img')
-    img1.src = 'assets/pine-tree.png'
-    img1.style.position = 'fixed'
-    img1.style.left = '350px'
-    img1.style.bottom = '175px'
-    document.body.append(img1)
+    return img
 }
-newImage()
+
+// const pic = ['assets/green-character.gif', 100, 100]
+
+newImage('assets/green-character.gif', 100, 100)
+newImage('assets/pine-tree.png', 575, 275)
+newImage('assets/tree.png', 200, 300)
+newImage('assets/pillar.png', 350, 100)
+newImage('assets/crate.png', 150, 200)
+newImage('assets/well.png', 500, 425)
