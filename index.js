@@ -11,7 +11,7 @@ function newImage(name, left, bottom) {
 function newItem(name, left, bottom) {
     let tool = newImage(name, left, bottom)
 
-    tool.addEventListener('click', function() {
+    tool.addEventListener('dblclick', function() {
         tool.remove();
     })
 }
