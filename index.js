@@ -1,4 +1,5 @@
 
+// create newImage function
 function newImage(name, left, bottom) {
     let img = document.createElement('img')
     img.src = name
@@ -8,6 +9,7 @@ function newImage(name, left, bottom) {
     document.body.append(img)
     return img
 }
+// reuse newImage funtion to make newItem function
 function newItem(name, left, bottom) {
     let tool = newImage(name, left, bottom)
 
@@ -15,7 +17,11 @@ function newItem(name, left, bottom) {
         tool.remove();
     })
 }
+// create a funtion that will span one image into a background
 
+// use both funtions to span and newImage to back sky and ground
+
+// Items to be created
 newImage('assets/green-character.gif', 100, 100)
 newImage('assets/pine-tree.png', 450, 200)
 newImage('assets/tree.png', 200, 300)
