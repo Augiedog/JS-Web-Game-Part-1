@@ -18,17 +18,16 @@ function newItem(name, left, bottom) {
     })
 }
 // create a funtion that will span one image into a background
-
 // use both funtions to span and newImage to back sky and ground
 
-// Items to be created
+// Items to be created, not interactive
 newImage('assets/green-character.gif', 100, 100)
 newImage('assets/pine-tree.png', 450, 200)
 newImage('assets/tree.png', 200, 300)
 newImage('assets/pillar.png', 350, 100)
 newImage('assets/crate.png', 150, 200)
 newImage('assets/well.png', 500, 425)
-
+// tools to be created, interactive
 newItem('assets/sword.png', 500, 405)
 newItem('assets/shield.png', 165, 185)
 newItem('assets/staff.png', 600, 100)
